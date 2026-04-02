@@ -1,0 +1,44 @@
+# Cursor용 AI 코딩 규칙
+
+## 1. 일반 원칙
+- 명확하고 간결한 코드 작성
+- 주석은 '왜'를 설명하고, 코드는 '무엇'을 명시
+- 한국어 주석 및 한국어 변수명 사용 금지 (영문만 사용)
+- 모든 코드는 UTF-8 인코딩
+
+## 2. HTML/CSS 규칙
+- 시맨틱 HTML5 태그 사용 (div 남용 금지)
+- BEM(Block Element Modifier) 네이밍 컨벤션 사용
+- CSS는 mobile-first 반응형 디자인
+- 접근성(a11y) 고려: alt 텍스트, ARIA 레이블 필수
+
+## 3. JavaScript 규칙
+- ES6+ 문법 사용 (const/let, arrow function, template literal)
+- 함수는 단일 책임 원칙 따름
+- 이벤트 리스너는 cleanup 처리 필수
+- console.log는 개발 중에만 사용
+
+## 4. 금지 사항
+- 인라인 스타일 사용 금지
+- setTimeout/setInterval 남발 금지
+- 전역 변수 사용 금지
+- 외부 라이브러리 무분별한 추가 금지 (Vanilla JS 유지)
+
+## 5. 파일 구조
+```
+portfolio-site/
+├── index.html
+├── styles/
+│   └── main.css
+├── scripts/
+│   └── app.js
+├── assets/
+│   ├── images/
+│   └── documents/
+└── docs/
+```
+
+## 6. 배포 설정
+- Vercel 배포 준비: vercel.json 설정 필요
+- 환경 변수는 .env.local에 저장
+- 프로덕션 빌드 전 성능 최적화 필수
